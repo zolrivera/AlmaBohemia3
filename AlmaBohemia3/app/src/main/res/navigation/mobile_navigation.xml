@@ -6,6 +6,19 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
+        android:id="@+id/navigation_producto"
+        android:name="com.example.almabohemia3.ui.productos.ProductoFragment"
+        android:label="Producto"
+        tools:layout="@layout/fragment_producto" />
+
+    <fragment
+        android:id="@+id/navigation_save"
+        android:name="com.example.almabohemia3.ui.save.SaveFragment"
+        android:label="Guardados"
+        tools:layout="@layout/fragment_save" />
+
+    <fragment
+
         android:id="@+id/navigation_home"
         android:name="com.example.almabohemia3.ui.home.HomeFragment"
         android:label="@string/title_home"
