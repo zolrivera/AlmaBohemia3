@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlmaBohemia3">
         <activity
+            android:name=".ProductoCompra"
+            android:exported="true" />
+        <activity
             android:name=".ProductActivity"
             android:exported="true" />
         <activity
