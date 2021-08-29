@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.096" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Elija su método de envío"
@@ -90,7 +90,7 @@
         tools:layout_editor_absoluteY="439dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/editTextTextPersonName6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -101,7 +101,7 @@
         tools:layout_editor_absoluteY="484dp" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/editTextTextPersonName7"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
