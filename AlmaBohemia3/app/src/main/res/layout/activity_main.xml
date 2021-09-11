@@ -11,13 +11,12 @@
         android:id="@+id/nav_view"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="0dp"
-        android:layout_marginEnd="0dp"
         android:background="?android:attr/windowBackground"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu" >
+        app:menu="@menu/bottom_nav_menu">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
@@ -40,15 +39,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Iniciar_sesión"
-        tools:layout_editor_absoluteX="128dp"
-        tools:layout_editor_absoluteY="398dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="376dp"
-        android:layout_height="652dp"
-        app:srcCompat="@drawable/inicio"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="23dp" />
+        android:layout_width="334dp"
+        android:layout_height="447dp"
+        app:layout_constraintBottom_toBottomOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment_activity_main"
+        app:layout_constraintVertical_bias="0.039"
+        app:srcCompat="@drawable/inicio" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,13 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.cita.CitaFragment">
+    android:orientation="vertical"
+    tools:context=".ui.cita.CitaFragment" >
 
     <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello" />
+        android:layout_height="wrap_content"
+        android:text="RESERVAR CITA:"
+        android:textSize="26dp"
+        />
 
-</FrameLayout>
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fecha Cita:"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18dp"
+                android:layout_margin="16dp"
+                />
+
+            <EditText
+                android:id="@+id/editTextTextPersonName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Selecciona Fecha"
+                android:inputType="textPersonName"
+                android:layout_margin="16dp"
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hora Cita:"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18dp"
+                android:layout_margin="16dp"
+                />
+
+
+            <Spinner
+                android:id="@+id/spinnerHora"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                />
+
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sede:"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18dp"
+                android:layout_margin="16dp"
+                />
+
+            <Spinner
+                android:id="@+id/spinnerSede"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:padding="20dp" />
+
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Motivo Cita:"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18dp"
+                android:layout_margin="16dp"/>
+
+            <Spinner
+                android:id="@+id/spinnerMotivo"
+                android:padding="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comentarios"
+                android:textColor="@color/cardview_dark_background"
+                android:textSize="18dp"
+                android:layout_margin="16dp"/>
+
+            <EditText
+                android:id="@+id/editTextTextPersonName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Comentario Adicional"
+                android:inputType="textPersonName"
+                android:layout_margin="16dp"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="3"
+                android:text="RESERVAR"
+                android:layout_margin="20dp"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

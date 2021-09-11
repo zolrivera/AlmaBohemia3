@@ -6,33 +6,23 @@
     app:startDestination="@+id/navigation_home">
 
     <fragment
-        android:id="@+id/navigation_producto"
+        android:id="@+id/navigation"
         android:name="com.example.almabohemia3.ui.productos.ProductoFragment"
         android:label="Producto"
         tools:layout="@layout/fragment_producto" />
 
     <fragment
-        android:id="@+id/navigation_save"
+        android:id="@+id/navigation_cita"
         android:name="com.example.almabohemia3.ui.save.SaveFragment"
-        android:label="Guardados"
-        tools:layout="@layout/fragment_save" />
+        android:label="@string/menu_cita"
+        tools:layout="@layout/fragment_cita" />
+
 
     <fragment
+        android:id="@+id/navigation_usuario"
+        android:name="com.example.almabohemia3.ui.usuario.UsuarioFragment"
+        android:label="@string/menu_usuario"
+        tools:layout="@layout/fragment_usuario" />
 
-        android:id="@+id/navigation_home"
-        android:name="com.example.almabohemia3.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
 
-    <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.almabohemia3.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
-    <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.almabohemia3.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
 </navigation>
